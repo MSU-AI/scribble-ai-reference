@@ -49,4 +49,5 @@ Secondly, the `st.write()` function takes whatever is put inside the parentheses
 Until next time, keep going over the things learned today, namely:
 
 1) What Scribble is
-2) 
+2) Playing around with Python to get familiar with it as a programming language
+3) Looking a little bit deeper into `st.write()` from the streamlit docs.
