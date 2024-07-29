@@ -26,3 +26,4 @@ canvas_result = st_canvas(
 # The image from the canvas is available as an ndarray and can be accessed via "canvas_result.image_data"
 if canvas_result.image_data is not None:
     # Do something here
+    pass
