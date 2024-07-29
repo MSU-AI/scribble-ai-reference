@@ -1,36 +1,16 @@
-class Perceptron:
-    def __init__(self, input_size):
-        """
-        Initialize the Perceptron with random weights and bias.
-        """
-        pass
+inputs = [1.0, 2.0, 3.0]
 
-    def sigmoid(self, x):
-        """
-        The sigmoid activation function.
-        """
-        pass
+# Corresponding weights
+weights = [0.2, 0.8, -0.5]
 
-    def sigmoid_derivative(self, x):
-        """
-        The derivative of the sigmoid function.
-        """
-        pass
+# Bias
+bias = 2.0
 
-    def forward_pass(self, inputs):
-        """
-        Perform a forward pass through the network.
-        """
-        pass
+# Calculate the dot product
+output = 0
+for i, weight in zip(inputs, weights):
+    output += weight*i
 
-    def train(self, inputs, outputs, num_epochs):
-        """
-        Train the Perceptron on the given inputs and outputs for a certain number of epochs.
-        """
-        pass
+output += bias
 
-    def predict(self, inputs):
-        """
-        Use the trained Perceptron to make a prediction on the given inputs.
-        """
-        pass
+print("Output:", output)

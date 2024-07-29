@@ -36,3 +36,40 @@ A typical Neural Network consists of three types of layers:
 
 ![nn](nn.jpg)
 
+### Weights and biases
+
+Weights and biases are crucial components of a Neural Network. They determine the strength and direction of the connections between neurons.
+
+Weights: These are the parameters within the network that transform input data within the network's layers. Each connection between neurons has an associated weight.
+Biases: These are additional parameters that allow the model to fit the data better by shifting the activation function.
+During training, the network adjusts the weights and biases to minimize the error in its predictions.
+
+### The Dot Product
+The dot product is a fundamental operation in Neural Networks. It is used to calculate the weighted sum of inputs, which is then passed through an activation function.
+
+Here's a simple example to illustrate the dot product:
+```python
+# List of inputs
+inputs = [1.0, 2.0, 3.0]
+
+# Corresponding weights
+weights = [0.2, 0.8, -0.5]
+
+# Bias
+bias = 2.0
+
+# Calculate the dot product
+output = 0
+for i, weight in zip(inputs, weights):
+    output += weight*i
+
+output += bias
+
+print("Output:", output)
+```
+
+### Wrapping Up
+
+In this session, we explored the basics of Machine Learning, including its three main types: Supervised, Unsupervised, and Reinforcement Learning. We then delved into Neural Networks, understanding their structure and the roles of weights and biases. Finally, we learned about the dot product, a fundamental operation in neural networks, with a simple example to illustrate its calculation.
+
+By grasping these foundational concepts, you are now better equipped to understand and work with neural networks and other machine learning models. Keep experimenting and exploring to deepen your understanding and skills in this exciting field
